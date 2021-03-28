@@ -1,2 +1,2 @@
-# minimalistic-jupyter
+# Minimalistic-jupyter
 Minimalistic Jupyter Setup

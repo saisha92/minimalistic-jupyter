@@ -1,0 +1,11 @@
+version:  '3'
+services:
+  minimalistic-notebook:
+      build: .
+      volumes:
+        - ${LOCAL_WORKING_DIR}:/home/jovyan/work
+        - ${LOCAL_DATASETS}:/home/jovyan/work/datasets
+      ports:
+        - ${PORT}:8888
+      container_name: jupyter_notebook
+      command: "start-notebook.sh"
